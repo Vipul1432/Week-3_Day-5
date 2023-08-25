@@ -1,0 +1,23 @@
+<div class="container">
+<div class="post-details">
+    <mat-card class="post-card"><span class="title">Title :</span>
+      <mat-card-header>
+        <mat-card-title>{{ post.title | titlecase }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content><span class="post">Post :</span>
+        <p class="post-content">{{ post.body | titlecase }}</p>
+      </mat-card-content>
+    </mat-card>
+  
+    <h3 class="comments-title">Comments :</h3>
+    <div class="comment-list">
+      <mat-card *ngFor="let comment of comments" class="comment-card">
+        <mat-card-content>
+          <strong class="comment-author">{{ comment.name | titlecase }}</strong>
+          <p class="comment-body">{{ comment.body | titlecase }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+  
