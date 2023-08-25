@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="nav-logo">
+      <a routerLink="/">
+        <img src="../assets/logo.png" alt="BlogApp Logo" class="logo-img">
+      </a>
+      <a routerLink="/" class="logo-title">BlogApp</a>
+    </div>
+    <ul class="nav-menu">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
