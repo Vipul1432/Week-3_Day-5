@@ -1,1 +1,16 @@
-<p>blog works!</p>
+<div class="blog-posts">
+  <h2 class="title">Latest Blog Posts</h2>
+  <div class="post-list">
+    <div class="post" *ngFor="let post of blogPosts">
+      <div class="post-thumbnail">
+        <img src="../../assets/demo.png" class="demo-image" alt="Post Thumbnail">
+      </div>
+      <div class="post-details">
+        <h3>{{ post.title }}</h3>
+        <p class="post-date">{{ post.date | date: 'medium' }}</p>
+        <div class="post-content">{{ post.content }}</div>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
