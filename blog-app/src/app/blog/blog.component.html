@@ -1,5 +1,6 @@
 <div class="blog-posts">
   <h2 class="title">Latest Blog Posts</h2>
+  <button class="create-button" [routerLink]="['/create']">Create Post</button>
   <div class="post-list">
     <div class="post" *ngFor="let post of blogPosts">
       <div class="post-thumbnail">
@@ -13,6 +14,7 @@
         <button mat-raised-button color="primary" [routerLink]="['/post', post.id]" class="read-more-button">
           Read more
         </button>
+        <button class="edit-button" mat-button color="primary" [routerLink]="['/edit', post.id]">Edit Post</button>
       </div>
     </div>
   </div>

@@ -11,6 +11,9 @@ import { BlogService } from './services/blog.service';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreatePostComponent } from './create-post/create-post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BlogComponent,
     ContactComponent,
     PostDetailsComponent,
+    CreatePostComponent,
+    EditPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     MatCardModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]

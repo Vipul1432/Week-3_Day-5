@@ -1,0 +1,48 @@
+.update-post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .update-post-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .update-post-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-post-card label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .update-post-card input[type="text"],
+  .update-post-card textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .update-post-card button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .update-post-card button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
