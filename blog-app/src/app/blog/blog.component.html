@@ -6,11 +6,14 @@
         <img src="../../assets/demo.png" class="demo-image" alt="Post Thumbnail">
       </div>
       <div class="post-details">
-        <h3>{{ post.title }}</h3>
+        <h3>{{ post.title | titlecase }}</h3>
         <p class="post-date">{{ post.date | date: 'medium' }}</p>
         <div class="post-content">{{ post.content }}</div>
-        <a href="#" class="read-more">Read more</a>
+        <div class="post-content">{{ post.body }}</div>
+        <button mat-raised-button color="primary" [routerLink]="['/post', post.id]" class="read-more-button">
+          Read more
+        </button>
       </div>
     </div>
   </div>
-</div>
+</div>  

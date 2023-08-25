@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogService } from './services/blog.service';
+import { PostDetailsComponent } from './post-details/post-details.component';
+import { MatCardModule } from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,11 +20,14 @@ import { BlogService } from './services/blog.service';
     AboutComponent,
     BlogComponent,
     ContactComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    BrowserAnimationsModule,
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]

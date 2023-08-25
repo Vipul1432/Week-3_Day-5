@@ -70,3 +70,14 @@
 .read-more:hover {
   color: #e67e22;
 }
+
+.read-more-button {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f39c12;
+  cursor: pointer;
+}
