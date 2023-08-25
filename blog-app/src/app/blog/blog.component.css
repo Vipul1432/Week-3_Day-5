@@ -81,3 +81,40 @@
   background-color: #f39c12;
   cursor: pointer;
 }
+
+/* Add/Edit Post Button Styles */
+.edit-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Create Post Button Styles */
+.create-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.create-button:hover {
+  background-color: #218838;
+}
+
+
